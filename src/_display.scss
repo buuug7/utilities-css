@@ -1,0 +1,115 @@
+//
+// Display
+//
+
+@each $breakpoint in map_keys($grid-breakpoints) {
+  @if $breakpoint == 'xs' {
+    .d-none {
+      display: none !important;
+    }
+
+    .d-inline {
+      display: inline !important;
+    }
+
+    .d-inline-block {
+      display: inline-block !important;
+    }
+
+    .d-block {
+      display: block !important;
+    }
+
+    .d-table {
+      display: table !important;
+    }
+
+    .d-table-row {
+      display: table-row !important;
+    }
+
+    .d-table-cell {
+      display: table-cell !important;
+    }
+
+    .d-flex {
+      display: flex !important;
+    }
+
+    .d-inline-flex {
+      display: inline-flex !important;
+    }
+  } @else {
+    @media (min-width: map_get($grid-breakpoints, $breakpoint)) {
+
+      .d-#{$breakpoint}-none {
+        display: none !important;
+      }
+
+      .d-#{$breakpoint}-inline {
+        display: inline !important;
+      }
+
+      .d-#{$breakpoint}-inline-block {
+        display: inline-block !important;
+      }
+
+      .d-#{$breakpoint}-block {
+        display: block !important;
+      }
+
+      .d-#{$breakpoint}-table {
+        display: table !important;
+      }
+
+      .d-#{$breakpoint}-table-row {
+        display: table-row !important;
+      }
+
+      .d-#{$breakpoint}-table-cell {
+        display: table-cell !important;
+      }
+
+      .d-#{$breakpoint}-flex {
+        display: flex !important;
+      }
+
+      .d-#{$breakpoint}-inline-flex {
+        display: inline-flex !important;
+      }
+    }
+  }
+}
+
+//
+// Display in print
+//
+@media print {
+  .d-print-none {
+    display: none !important;
+  }
+  .d-print-inline {
+    display: inline !important;
+  }
+  .d-print-inline-block {
+    display: inline-block !important;
+  }
+  .d-print-block {
+    display: block !important;
+  }
+  .d-print-table {
+    display: table !important;
+  }
+  .d-print-table-row {
+    display: table-row !important;
+  }
+  .d-print-table-cell {
+    display: table-cell !important;
+  }
+  .d-print-flex {
+    display: flex !important;
+  }
+  .d-print-inline-flex {
+    display: inline-flex !important;
+  }
+}

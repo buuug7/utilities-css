@@ -1,0 +1,39 @@
+//
+// Float
+//
+
+@each $breakpoint in map_keys($grid-breakpoints) {
+  @if $breakpoint == 'xs' {
+    .float-left {
+      float: left !important;
+    }
+
+    .float-right {
+      float: right !important;
+    }
+
+    .float-none {
+      float: none !important;
+    }
+  } @else {
+    @media (min-width: map_get($grid-breakpoints, $breakpoint)) {
+      .float-#{$breakpoint}-left {
+        float: left !important;
+      }
+
+      .float-#{$breakpoint}-right {
+        float: right !important;
+      }
+
+      .float-#{$breakpoint}-none {
+        float: none !important;
+      }
+    }
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

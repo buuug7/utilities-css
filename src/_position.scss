@@ -1,0 +1,25 @@
+//
+// Position
+//
+
+$positions: static, relative, absolute, fixed, sticky;
+
+@each $breakpoint in map_keys($grid-breakpoints) {
+  @if $breakpoint == 'xs' {
+    @each $position in $positions {
+      .position-#{$position} {
+        position: $position !important;
+      }
+    }
+  } @else {
+    @media (min-width: map_get($grid-breakpoints, $breakpoint)) {
+      @each $position in $positions {
+        .position-#{$breakpoint}-#{$position} {
+          position: $position !important;
+        }
+      }
+    }
+  }
+}
+
+// TODO: responsive
