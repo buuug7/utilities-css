@@ -285,5 +285,191 @@
 
   .position-xl-sticky {
     position: sticky !important; } }
+.visible {
+  visibility: visible; }
+
+.invisible {
+  visibility: hidden; }
+
+.overflow-visible {
+  overflow: visible; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+.overflow-scroll {
+  overflow: scroll; }
+
+.overflow-auto {
+  overflow: auto; }
+
+.overflow-x-visible {
+  overflow-x: visible; }
+
+.overflow-x-hidden {
+  overflow-x: hidden; }
+
+.overflow-x-scroll {
+  overflow-x: scroll; }
+
+.overflow-x-auto {
+  overflow-x: auto; }
+
+.overflow-y-visible {
+  overflow-y: visible; }
+
+.overflow-y-hidden {
+  overflow-y: hidden; }
+
+.overflow-y-scroll {
+  overflow-y: scroll; }
+
+.overflow-y-auto {
+  overflow-y: auto; }
+
+@media (min-width: 576px) {
+  .overflow-sm-visible {
+    overflow: visible; }
+
+  .overflow-sm-hidden {
+    overflow: hidden; }
+
+  .overflow-sm-scroll {
+    overflow: scroll; }
+
+  .overflow-sm-auto {
+    overflow: auto; }
+
+  .overflow-x-sm-visible {
+    overflow-x: visible; }
+
+  .overflow-x-sm-hidden {
+    overflow-x: hidden; }
+
+  .overflow-x-sm-scroll {
+    overflow-x: scroll; }
+
+  .overflow-x-sm-auto {
+    overflow-x: auto; }
+
+  .overflow-y-sm-visible {
+    overflow-y: visible; }
+
+  .overflow-y-sm-hidden {
+    overflow-y: hidden; }
+
+  .overflow-y-sm-scroll {
+    overflow-y: scroll; }
+
+  .overflow-y-sm-auto {
+    overflow-y: auto; } }
+@media (min-width: 768px) {
+  .overflow-md-visible {
+    overflow: visible; }
+
+  .overflow-md-hidden {
+    overflow: hidden; }
+
+  .overflow-md-scroll {
+    overflow: scroll; }
+
+  .overflow-md-auto {
+    overflow: auto; }
+
+  .overflow-x-md-visible {
+    overflow-x: visible; }
+
+  .overflow-x-md-hidden {
+    overflow-x: hidden; }
+
+  .overflow-x-md-scroll {
+    overflow-x: scroll; }
+
+  .overflow-x-md-auto {
+    overflow-x: auto; }
+
+  .overflow-y-md-visible {
+    overflow-y: visible; }
+
+  .overflow-y-md-hidden {
+    overflow-y: hidden; }
+
+  .overflow-y-md-scroll {
+    overflow-y: scroll; }
+
+  .overflow-y-md-auto {
+    overflow-y: auto; } }
+@media (min-width: 992px) {
+  .overflow-lg-visible {
+    overflow: visible; }
+
+  .overflow-lg-hidden {
+    overflow: hidden; }
+
+  .overflow-lg-scroll {
+    overflow: scroll; }
+
+  .overflow-lg-auto {
+    overflow: auto; }
+
+  .overflow-x-lg-visible {
+    overflow-x: visible; }
+
+  .overflow-x-lg-hidden {
+    overflow-x: hidden; }
+
+  .overflow-x-lg-scroll {
+    overflow-x: scroll; }
+
+  .overflow-x-lg-auto {
+    overflow-x: auto; }
+
+  .overflow-y-lg-visible {
+    overflow-y: visible; }
+
+  .overflow-y-lg-hidden {
+    overflow-y: hidden; }
+
+  .overflow-y-lg-scroll {
+    overflow-y: scroll; }
+
+  .overflow-y-lg-auto {
+    overflow-y: auto; } }
+@media (min-width: 1200px) {
+  .overflow-xl-visible {
+    overflow: visible; }
+
+  .overflow-xl-hidden {
+    overflow: hidden; }
+
+  .overflow-xl-scroll {
+    overflow: scroll; }
+
+  .overflow-xl-auto {
+    overflow: auto; }
+
+  .overflow-x-xl-visible {
+    overflow-x: visible; }
+
+  .overflow-x-xl-hidden {
+    overflow-x: hidden; }
+
+  .overflow-x-xl-scroll {
+    overflow-x: scroll; }
+
+  .overflow-x-xl-auto {
+    overflow-x: auto; }
+
+  .overflow-y-xl-visible {
+    overflow-y: visible; }
+
+  .overflow-y-xl-hidden {
+    overflow-y: hidden; }
+
+  .overflow-y-xl-scroll {
+    overflow-y: scroll; }
+
+  .overflow-y-xl-auto {
+    overflow-y: auto; } }
 
 /*# sourceMappingURL=utility-css.css.map */

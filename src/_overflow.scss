@@ -2,42 +2,24 @@
 // Overflow
 //
 
-.overflow-auto {
-  overflow: auto;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.overflow-visible {
-  overflow: visible;
-}
-
-.overflow-scroll {
-  overflow: scroll;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
-.overflow-y-auto {
-  overflow-y: auto;
-}
-
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
-
-.overflow-y-scroll {
-  overflow-y: scroll;
-}
-
-.scrolling-touch {
-  -webkit-overflow-scrolling: touch;
-}
-
-.scrolling-auto {
-  -webkit-overflow-scrolling: auto;
+@each $breakpoint in map_keys($grid-breakpoints) {
+  @if $breakpoint == 'xs' {
+    @each $overflow in overflow, overflow-x, overflow-y {
+      @each $value in visible, hidden, scroll, auto {
+        .#{$overflow}-#{$value} {
+          #{$overflow}: $value;
+        }
+      }
+    }
+  } @else {
+    @media (min-width: map_get($grid-breakpoints, $breakpoint)) {
+      @each $overflow in overflow, overflow-x, overflow-y {
+        @each $value in visible, hidden, scroll, auto {
+          .#{$overflow}-#{$breakpoint}-#{$value} {
+            #{$overflow}: $value;
+          }
+        }
+      }
+    }
+  }
 }

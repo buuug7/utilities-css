@@ -20,6 +20,8 @@ Or from CDN
 
 ## Include utilities
 
+> The below {breakpoint} is one of `sm`, `md`, `lg` and `xl`
+
 ##### Display
 The display utility referenced from bootstrap display utility. 
 
@@ -27,7 +29,7 @@ The display utility referenced from bootstrap display utility.
 `.d-{value}`, {value} for `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex`.
 
 ###### Responsive
-`.d-{breakpoint}-{value}`, {breakpoint} for `sm`, `md`, `lg` and `xl`, be aware that `xs` in not include. {value} for `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex`.
+`.d-{breakpoint}-{value}`,  be aware that `xs` in not include. {value} for `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex`.
 
 Example:  
 `.d-md-hidden` means set the display of element with hidden value on `md` or wider
@@ -43,7 +45,7 @@ The float utility referenced from bootstrap float utility. Be ware the float uti
 + `.float-none`
 
 ###### Responsive
-`.float-{breakpoint}-{value}`, {breakpoint} for `sm, md, lg, xl`, {value} for `left, right, none`.
+`.float-{breakpoint}-{value}`, {value} for `left, right, none`.
 
 Example:  
 `.float-lg-right` means float right on `lg` or wider
@@ -59,10 +61,30 @@ Example:
 + `.position-sticky`
 
 ###### Responsive
-`.position-{breakpoint}-{value}`, {breakpoint} for `sm, md, lg, xl`, {value} for `static, relative, absolute, fixed, sticky`.
+`.position-{breakpoint}-{value}`, {value} for `static, relative, absolute, fixed, sticky`.
 
 Example:  
 `.position-md-static` means set the element position with static value on `md` or wider
+
+#### Visibility
++ `.visible`
++ `.invisible`
+
+
+#### Overflow
+
+###### Normal
++ `.overflow-{value}`, {value} for `visible, hidden, scroll, auto`
++ `.overflow-{x|y}-{value}`, {value} for `visible, hidden, scroll, auto`
+
+###### Responsive
++ `.overflow-{breakpoint}-{value}`, {value} for `visible, hidden, scroll, auto`
++ `.overflow-{breakpoint}-{x|y}-{value}`, {value} for `visible, hidden, scroll, auto`
+
+Example:
+`.overflow-sm-hidden` means set the element overflow with hidden value on `sm` or wider screen
+
+
 
 ## Contributing
 If you're interested in contributing to Utility CSS, please read our [CONTRIBUTING.md](https://github.com/buuug7/utility-css/blob/master/CONTRIBUTING.md) before submitting a pull request.
