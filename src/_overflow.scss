@@ -7,7 +7,7 @@
     @each $overflow in overflow, overflow-x, overflow-y {
       @each $value in visible, hidden, scroll, auto {
         .#{$overflow}-#{$value} {
-          #{$overflow}: $value;
+          #{$overflow}: $value !important;
         }
       }
     }
@@ -16,7 +16,7 @@
       @each $overflow in overflow, overflow-x, overflow-y {
         @each $value in visible, hidden, scroll, auto {
           .#{$overflow}-#{$breakpoint}-#{$value} {
-            #{$overflow}: $value;
+            #{$overflow}: $value !important;
           }
         }
       }
