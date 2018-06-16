@@ -1,0 +1,33 @@
+//
+// Colors
+//
+
+// text colors
+//
+@each $name, $color in $text-colors {
+  .text-#{$name} {
+    color: $color !important;
+  }
+  a.text-#{$name}:hover {
+    color: darken($color, 10%) !important;
+  }
+}
+
+// background colors
+//
+@each $name, $color in $bg-colors {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+  a.bg-#{$name}:hover, button.bg-#{$name}:hover {
+    background-color: darken($color, 10%) !important;
+  }
+}
+
+// gradient background colors
+//
+@each $name, $color in $bg-colors {
+  .bg-gradient-#{$name} {
+    background: $color linear-gradient(180deg,mix($white, $color, 15%),$color) repeat-x !important;
+  }
+}

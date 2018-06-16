@@ -84,7 +84,11 @@ Example:
 Example:
 `.overflow-sm-hidden` means set the element overflow with hidden value on `sm` or wider screen
 
-
+#### Colors
+###### text colors
+###### background colors
+###### gradient background colors
+TODO
 
 ## Contributing
 If you're interested in contributing to Utility CSS, please read our [CONTRIBUTING.md](https://github.com/buuug7/utility-css/blob/master/CONTRIBUTING.md) before submitting a pull request.
