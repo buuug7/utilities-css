@@ -26,34 +26,34 @@ Or from CDN
 The display utility referenced from bootstrap display utility. 
 
 ###### Normal
-`.d-{value}`, {value} for `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex`.
+`.d-{value}`, value for `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex`.
 
 ###### Responsive
-`.d-{breakpoint}-{value}`,  be aware that `xs` in not include. {value} for `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex`.
+`.d-{breakpoint}-{value}`,  be aware that `xs` in not include. value for `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex`.
 
 Example:  
-`.d-md-hidden` means set the display of element with hidden value on `md` or wider
+`.d-md-hidden` which set the display of element with hidden value on `md` or wider
 
 
 #### Float
 The float utility referenced from bootstrap float utility. Be ware the float utilities have no affect on flex items.  
 
 ###### Normal
-`.float-{value}`, {value} for `left, right, none`
+`.float-{value}`, value for `left, right, none`
 + `.float-left`
 + `.float-right`
 + `.float-none`
 
 ###### Responsive
-`.float-{breakpoint}-{value}`, {value} for `left, right, none`.
+`.float-{breakpoint}-{value}`, value for `left, right, none`.
 
 Example:  
-`.float-lg-right` means float right on `lg` or wider
+`.float-lg-right` which float right on `lg` or wider
 
 
 #### Position
 ###### Normal
-`.position-{value}`, {value} for `static, relative, absolute, fixed, sticky`.
+`.position-{value}`, value for `static, relative, absolute, fixed, sticky`.
 + `.position-static`
 + `.position-relative`
 + `.position-absolute`
@@ -61,10 +61,11 @@ Example:
 + `.position-sticky`
 
 ###### Responsive
-`.position-{breakpoint}-{value}`, {value} for `static, relative, absolute, fixed, sticky`.
+`.position-{breakpoint}-{value}`, value for `static, relative, absolute, fixed, sticky`.
 
 Example:  
-`.position-md-static` means set the element position with static value on `md` or wider
+`.position-md-static` which set the element position with static value on `md` or wider
+
 
 #### Visibility
 + `.visible`
@@ -74,21 +75,32 @@ Example:
 #### Overflow
 
 ###### Normal
-+ `.overflow-{value}`, {value} for `visible, hidden, scroll, auto`
-+ `.overflow-{x|y}-{value}`, {value} for `visible, hidden, scroll, auto`
++ `.overflow-{value}`, value for `visible, hidden, scroll, auto`
++ `.overflow-{x|y}-{value}`, value for `visible, hidden, scroll, auto`
 
 ###### Responsive
-+ `.overflow-{breakpoint}-{value}`, {value} for `visible, hidden, scroll, auto`
-+ `.overflow-{breakpoint}-{x|y}-{value}`, {value} for `visible, hidden, scroll, auto`
++ `.overflow-{breakpoint}-{value}`, value for `visible, hidden, scroll, auto`
++ `.overflow-{breakpoint}-{x|y}-{value}`, value for `visible, hidden, scroll, auto`
 
 Example:
-`.overflow-sm-hidden` means set the element overflow with hidden value on `sm` or wider screen
+`.overflow-sm-hidden` which set the element overflow with hidden value on `sm` or wider screen
+
+
+#### z-index
+`.z-{value}`, value for 0|10|20|30|40|50|auto  
+
+Example:  
+`.z-10` for set the element z-index with 10 
 
 #### Colors
 ###### text colors
+`.text-{color}`, color for `primary, secondary, success info warning danger light dark muted white`. if applied with `<a>` or `<button>` element, which have a hover state for darken 10%.  
+
 ###### background colors
+`.bg-{color}`, color for `primary secondary success info warning danger light dark white transparent`. also when background color applied with `<a>` or `<button>` elements, which have a hover state for darken 10%;
+
 ###### gradient background colors
-TODO
+`.bg-gradient-{color}`, color for `primary secondary success info warning danger light dark white transparent`.
 
 ## Contributing
-If you're interested in contributing to Utility CSS, please read our [CONTRIBUTING.md](https://github.com/buuug7/utility-css/blob/master/CONTRIBUTING.md) before submitting a pull request.
+If you're interested in contributing to Utility CSS, please read our [CONTRIBUTING.md](https://github.com/buuug7/utility-css/blob/master/CONTRIBUTING.md) before submitting a pull request.  

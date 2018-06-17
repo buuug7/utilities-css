@@ -472,22 +472,22 @@
   .overflow-y-xl-auto {
     overflow-y: auto !important; } }
 .z-0 {
-  z-index: 0; }
+  z-index: 0 !important; }
 
 .z-10 {
-  z-index: 10; }
+  z-index: 10 !important; }
 
 .z-20 {
-  z-index: 20; }
+  z-index: 20 !important; }
 
 .z-40 {
-  z-index: 40; }
+  z-index: 40 !important; }
 
 .z-50 {
-  z-index: 50; }
+  z-index: 50 !important; }
 
 .z-auto {
-  z-index: auto; }
+  z-index: auto !important; }
 
 .text-primary {
   color: #007bff !important; }
