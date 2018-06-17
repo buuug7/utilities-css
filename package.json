@@ -1,7 +1,7 @@
 {
-  "name": "utility-css",
+  "name": "utilities-css",
   "version": "1.0.0",
-  "description": "Simple and easy to use utility CSS, compatibility with bootstrap utilities.",
+  "description": "simple and easy to use utilities CSS, compatibility with bootstrap utilities.",
   "main": "index.js",
   "dependencies": {
   },
@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buuug7/utility-css.git"
+    "url": "git+https://github.com/buuug7/utilities-css.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/buuug7/utility-css/issues"
+    "url": "https://github.com/buuug7/utilities-css/issues"
   },
-  "homepage": "https://github.com/buuug7/utility-css#readme"
+  "homepage": "https://github.com/buuug7/utilities-css#readme"
 }
