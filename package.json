@@ -1,10 +1,9 @@
 {
   "name": "utilities-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple and easy to use utilities CSS, compatibility with bootstrap utilities.",
   "main": "index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
