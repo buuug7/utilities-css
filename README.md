@@ -11,7 +11,7 @@ The grid breakpoints is as same as bootstrap grid breakpoints.
 
 ## Usage
 ```
-npm install utility-css
+npm install utilities-css
 ```
 Or from CDN
 ```
