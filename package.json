@@ -13,7 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/buuug7/utilities-css.git"
   },
-  "keywords": [],
+  "keywords": [
+    "css",
+    "utilities css",
+    "front-end",
+    "web"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
