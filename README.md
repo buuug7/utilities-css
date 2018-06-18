@@ -15,7 +15,7 @@ npm install utilities-css
 ```
 Or from CDN
 ```
-<link href="https://cdn.jsdelivr.net/npm/utility-css/dist/utility-css.min.css" rel="stylesheet">
+<link href="https://unpkg.com/utilities-css" rel="stylesheet">
 ```
 
 ## Include utilities
