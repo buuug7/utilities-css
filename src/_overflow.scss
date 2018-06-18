@@ -3,21 +3,13 @@
 //
 
 @each $breakpoint in map_keys($grid-breakpoints) {
-  @if $breakpoint == 'xs' {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
     @each $overflow in overflow, overflow-x, overflow-y {
       @each $value in visible, hidden, scroll, auto {
-        .#{$overflow}-#{$value} {
+        .#{$overflow}#{$infix}-#{$value} {
           #{$overflow}: $value !important;
-        }
-      }
-    }
-  } @else {
-    @media (min-width: map_get($grid-breakpoints, $breakpoint)) {
-      @each $overflow in overflow, overflow-x, overflow-y {
-        @each $value in visible, hidden, scroll, auto {
-          .#{$overflow}-#{$breakpoint}-#{$value} {
-            #{$overflow}: $value !important;
-          }
         }
       }
     }

@@ -3,80 +3,43 @@
 //
 
 @each $breakpoint in map_keys($grid-breakpoints) {
-  @if $breakpoint == 'xs' {
-    .d-none {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+    .d#{$infix}-none {
       display: none !important;
     }
 
-    .d-inline {
+    .d#{$infix}-inline {
       display: inline !important;
     }
 
-    .d-inline-block {
+    .d#{$infix}-inline-block {
       display: inline-block !important;
     }
 
-    .d-block {
+    .d#{$infix}-block {
       display: block !important;
     }
 
-    .d-table {
+    .d#{$infix}-table {
       display: table !important;
     }
 
-    .d-table-row {
+    .d#{$infix}-table-row {
       display: table-row !important;
     }
 
-    .d-table-cell {
+    .d#{$infix}-table-cell {
       display: table-cell !important;
     }
 
-    .d-flex {
+    .d#{$infix}-flex {
       display: flex !important;
     }
 
-    .d-inline-flex {
+    .d#{$infix}-inline-flex {
       display: inline-flex !important;
-    }
-  } @else {
-    @media (min-width: map_get($grid-breakpoints, $breakpoint)) {
-
-      .d-#{$breakpoint}-none {
-        display: none !important;
-      }
-
-      .d-#{$breakpoint}-inline {
-        display: inline !important;
-      }
-
-      .d-#{$breakpoint}-inline-block {
-        display: inline-block !important;
-      }
-
-      .d-#{$breakpoint}-block {
-        display: block !important;
-      }
-
-      .d-#{$breakpoint}-table {
-        display: table !important;
-      }
-
-      .d-#{$breakpoint}-table-row {
-        display: table-row !important;
-      }
-
-      .d-#{$breakpoint}-table-cell {
-        display: table-cell !important;
-      }
-
-      .d-#{$breakpoint}-flex {
-        display: flex !important;
-      }
-
-      .d-#{$breakpoint}-inline-flex {
-        display: inline-flex !important;
-      }
     }
   }
 }
