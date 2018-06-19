@@ -1,0 +1,13 @@
+//
+// Shadow
+//
+
+$box-shadow-sm: 0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow: 0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
+
+@each $name, $value in ('-sm': $box-shadow-sm, '':$box-shadow, '-lg': $box-shadow-lg, '-none': none) {
+  .shadow#{$name} {
+    box-shadow: $value !important;
+  }
+}

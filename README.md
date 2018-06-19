@@ -134,6 +134,42 @@ Example:
 `.px-sm-0` set the element padding left and right with 0 value on `sm` and wider  
 `.mx-auto` set the element margin left and right with auto value
 
+#### Shadow
+This copied from bootstrap.
++ `.shadow-none`
++ `.shadow-sm`
++ `.shadow`
++ `.shadow-lg`
+
+#### Border
+The border default width is `1px solid #6c757d`
++ `.border`
++ `.border-top`
++ `.border-right`
++ `.border-bottom`
++ `.border-left`
+
+Border style:  
++ `.border-solid`
++ `.border-dashed`
++ `.border-dotted`
++ `.border-none`
+
+Border width: 
++ `.border-{0|1|2|3|4|5}`
++ `.border-{top|right|bottom|left}-{0|1|2|3|4|5}`
+
+Border color:  
+`.border-{color}`, the color is one of `primary, secondary, success, info, warning, danger, light, dark, muted, white`.
+
+Border radius:  
++ `.rounded`
++ `.rounded-{sm|lg}` radius size
++ `.rounded-{top|right|bottom|left}`
++ `.rounded-{top|right|bottom|left}-{sm|lg}`
++ `.rounded-circle` circle
++ `.rounded-0` no radius
+
 
 ## Contributing
 If you're interested in contributing to Utility CSS, please read our [CONTRIBUTING.md](https://github.com/buuug7/utility-css/blob/master/CONTRIBUTING.md) before submitting a pull request.  

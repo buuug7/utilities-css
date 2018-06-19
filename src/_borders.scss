@@ -1,0 +1,99 @@
+//
+// Borders
+//
+
+$border-width: 1px !default;
+$border-color: $gray-300 !default;
+
+$border-radius: .25rem !default;
+$border-radius-lg: .3rem !default;
+$border-radius-sm: .2rem !default;
+
+.border {
+  border: $border-width solid $border-color !important;
+}
+
+.border-top {
+  border-top: $border-width solid $border-color !important;
+}
+
+.border-right {
+  border-right: $border-width solid $border-color !important;
+}
+
+.border-bottom {
+  border-bottom: $border-width solid $border-color !important;
+}
+
+.border-left {
+  border-left: $border-width solid $border-color !important;
+}
+
+//
+// border style
+
+@each $style in solid, dashed, dotted, none{
+  .border-#{$style}{
+    border-style: $style !important;
+  }
+}
+
+// border width
+//
+@each $width in 0, 1, 2, 3, 4, 5 {
+  .border-#{$width} {
+    border-width: #{$width}px !important;
+  }
+}
+
+@each $width in 0, 1, 2, 3, 4, 5 {
+  @each $side in top, right, bottom, left {
+    .border-#{$side}-#{$width} {
+      border-#{$side}-width: #{$width}px !important;
+    }
+  }
+}
+
+// border colors
+//
+@each $color, $value in $text-colors {
+  .border-#{$color} {
+    border-color: $value !important;
+  }
+}
+
+// border radius
+//
+@each $name, $radius in ('-sm':$border-radius-sm, '': $border-radius, '-lg':$border-radius-lg) {
+  .rounded#{$name} {
+    border-radius: $radius !important;
+  }
+  .rounded-top#{$name} {
+    border-top-left-radius: $radius !important;
+    border-top-right-radius: $radius !important;
+  }
+
+  .rounded-right#{$name} {
+    border-top-right-radius: $radius !important;
+    border-bottom-right-radius: $radius !important;
+  }
+
+  .rounded-bottom#{$name} {
+    border-bottom-left-radius: $radius !important;
+    border-bottom-right-radius: $radius !important;
+  }
+
+  .rounded-left#{$name} {
+    border-top-left-radius: $radius !important;
+    border-bottom-left-radius: $radius !important;
+  }
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.rounded-0 {
+  border-radius: 0 !important;
+}
+
