@@ -171,5 +171,12 @@ Border radius:
 + `.rounded-0` no radius
 
 
+#### Sizing
++ `.w-{25|50|75|100|auto}` for width 25%, 50%, 75%, 100% and auto
++ `.h-{25|50|75|100|auto}` for height 25%, 50%, 75%, 100% and auto
++ `.mw-100` set the max-width with 100%
++ `.mh-100` set the max-height with 100%
+
+
 ## Contributing
 If you're interested in contributing to Utilities CSS, please read our [CONTRIBUTING.md](https://github.com/buuug7/utilities-css/blob/master/CONTRIBUTING.md) before submitting a pull request.  
