@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
     # specify the version you desire here
-    - image: circleci/node:7.10
+    - image: circleci/node:11-browsers
 
     # Specify service dependencies here if necessary
     # CircleCI maintains a library of pre-built images
@@ -18,6 +18,7 @@ jobs:
 
     steps:
     - checkout
+    - run: echo "hello world"
 
     # Download and cache dependencies
     - restore_cache:
