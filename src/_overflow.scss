@@ -2,16 +2,10 @@
 // Overflow
 //
 
-@each $breakpoint in map_keys($grid-breakpoints) {
-  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
-    @each $overflow in overflow, overflow-x, overflow-y {
-      @each $value in visible, hidden, scroll, auto {
-        .#{$overflow}#{$infix}-#{$value} {
-          #{$overflow}: $value !important;
-        }
-      }
+@each $overflow in overflow, overflow-x, overflow-y {
+  @each $value in visible, hidden, scroll, auto {
+    .#{$overflow}-#{$value} {
+      #{$overflow}: $value;
     }
   }
 }

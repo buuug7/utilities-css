@@ -4,14 +4,8 @@
 
 $positions: static, relative, absolute, fixed, sticky;
 
-@each $breakpoint in map_keys($grid-breakpoints) {
-  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
-    @each $position in $positions {
-      .position#{$infix}-#{$position} {
-        position: $position !important;
-      }
-    }
+@each $position in $positions {
+  .position-#{$position} {
+    position: $position !important;
   }
 }

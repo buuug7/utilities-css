@@ -2,21 +2,11 @@
 // Float
 //
 
-@each $breakpoint in map_keys($grid-breakpoints) {
-  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+$floats: left, right, none;
 
-  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
-    .float#{$infix}-left {
-      float: left !important;
-    }
-
-    .float#{$infix}-right {
-      float: right !important;
-    }
-
-    .float#{$infix}-none {
-      float: none !important;
-    }
+@each $float in $floats {
+  .float-#{$float} {
+    float: $float !important;
   }
 }
 

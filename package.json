@@ -5,8 +5,13 @@
   "main": "dist/utilities-css.css",
   "style": "dist/utilities-css.css",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "prettier": "^1.16.4"
+  },
   "scripts": {
+    "start": "node-sass -w src -o ./dist",
+    "build": "node-sass ./src/utilities-css.scss -o ./dist",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {

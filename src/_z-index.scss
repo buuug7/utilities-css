@@ -2,8 +2,8 @@
 // z-index
 //
 
-@each $z-index in 0, 10, 20, 40, 50, auto{
-  .z-#{$z-index}{
+@each $z-index in 0, 10, 20, 30, 40, 50, auto {
+  .z-#{$z-index} {
     z-index: $z-index !important;
   }
 }
