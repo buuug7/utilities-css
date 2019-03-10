@@ -10,8 +10,3 @@ $floats: left, right, none;
   }
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
