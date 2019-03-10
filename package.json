@@ -13,7 +13,7 @@
     "start": "node-sass -w src -o ./dist",
     "build": "node-sass ./src/utilities-css.scss -o ./dist",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "version": "npm run build",
+    "version": "npm run build && git add -A dist",
     "postversion": "git push && git push --tags"
   },
   "repository": {
