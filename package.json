@@ -1,6 +1,6 @@
 {
   "name": "utilities-css",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "simple and easy to use utilities CSS, compatibility with bootstrap utilities.",
   "main": "dist/utilities-css.css",
   "style": "dist/utilities-css.css",
