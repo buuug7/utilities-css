@@ -191,7 +191,12 @@ Support most features of flex layout and let user quickly manage layout, alignme
 
 Other utilities
 
-- clearfix    
+- clearfix
+
+## publish
+
+- run `npm version major|minor|patch -m "some message %s"`
+- run `npm publish`
 
 ## Contributing
 
