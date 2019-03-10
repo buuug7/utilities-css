@@ -1,6 +1,6 @@
 # Utility CSS
 
-Simple and easy to use utilities CSS, inspired by [tailwindcss](https://github.com/tailwindcss/tailwindcss), but the tailwindcss is more complex and verbose to use. This only focused on wrap the most common use css into class name.
+Simple and easy to use utilities CSS, inspired by [tailwindcss](https://github.com/tailwindcss/tailwindcss), but the tailwindcss is more complex and verbose to use. This only focused on wrap the most common use css into class name. The most utilities steal from [Bootstrap](https://github.com/twbs/bootstrap) utilities.
 
 Not support Responsive.
 
@@ -140,6 +140,58 @@ Border radius:
 - `h-{25|50|75|100|auto}` for height 25%, 50%, 75%, 100% and auto
 - `mw-100` set the max-width with 100%
 - `mh-100` set the max-height with 100%
+
+#### Flex
+
+Support most features of flex layout and let user quickly manage layout, alignment and more of control. steal from Bootstrap flex utilities.
+
+- flex direction
+    - flex-row
+    - flex-row-reverse
+    - flex-column
+    - flex-column-reverse
+- flex wrap
+    - flex-wrap
+    - flex-nowrap
+    - flex-wrap-reverse
+- flex grow and shrink
+    - flex-fill
+    - flex-grow-0
+    - flex-grow-1
+    - flex-shrink-0
+    - flex-shrink-1
+- justify content
+    - justify-content-start
+    - justify-content-end
+    - justify-content-center
+    - justify-content-between
+    - justify-content-around
+- align items
+    - align-items-start
+    - align-items-end
+    - align-items-center
+    - align-items-baseline
+    - align-items-stretch
+- align content
+    - align-content-start
+    - align-content-end
+    - align-content-center
+    - align-content-between
+    - align-content-around
+    - align-content-stretch
+- align self
+    - align-self-auto
+    - align-self-start
+    - align-self-end
+    - align-self-center
+    - align-self-baseline
+    - align-self-stretch
+    
+#### Others
+
+Other utilities
+
+- clearfix    
 
 ## Contributing
 
