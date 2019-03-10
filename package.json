@@ -12,7 +12,9 @@
   "scripts": {
     "start": "node-sass -w src -o ./dist",
     "build": "node-sass ./src/utilities-css.scss -o ./dist",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
