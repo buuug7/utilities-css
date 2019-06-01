@@ -7,8 +7,8 @@
   "sass": "src/utilities-css.scss",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.11.0",
-    "prettier": "^1.16.4"
+    "node-sass": "^4.12.0",
+    "prettier": "^1.17.1"
   },
   "scripts": {
     "start": "node-sass -w src -o ./dist",
