@@ -5,17 +5,24 @@
   "main": "",
   "style": "dist/utilities-css.css",
   "sass": "src/utilities-css.scss",
-  "dependencies": {},
-  "devDependencies": {
-    "node-sass": "^4.12.0",
-    "prettier": "^1.17.1"
-  },
   "scripts": {
+    "pretty-quick": "pretty-quick",
     "start": "node-sass -w src -o ./dist",
     "build": "node-sass ./src/utilities-css.scss -o ./dist",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "version": "npm run build && git add -A dist",
+    "preversion": "git add .",
+    "version": "npm run build && git add .",
     "postversion": "git push && git push --tags"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "husky": "^2.4.1",
+    "pretty-quick": "^1.11.1"
   },
   "repository": {
     "type": "git",
