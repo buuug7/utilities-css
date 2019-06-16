@@ -9,7 +9,6 @@
     "pretty-quick": "pretty-quick",
     "start": "node-sass -w src -o ./dist",
     "build": "node-sass ./src/utilities-css.scss -o ./dist",
-    "preversion": "git add .",
     "version": "npm run build && git add .",
     "postversion": "git push && git push --tags"
   },
