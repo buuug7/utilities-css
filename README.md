@@ -180,12 +180,19 @@ Support most features of flex layout and let user quickly manage layout, alignme
   - align-content-around
   - align-content-stretch
 - align self
+
   - align-self-auto
   - align-self-start
   - align-self-end
   - align-self-center
   - align-self-baseline
   - align-self-stretch
+
+#### center
+
+TODO
+
+- text-center
 
 #### Others
 
