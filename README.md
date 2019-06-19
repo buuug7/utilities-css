@@ -188,17 +188,13 @@ Support most features of flex layout and let user quickly manage layout, alignme
   - align-self-baseline
   - align-self-stretch
 
-#### center
-
-TODO
-
-- text-center
-
-#### Others
+#### Other
 
 Other utilities
 
 - clearfix
+- text-center
+- list-unstyled
 
 ## publish
 

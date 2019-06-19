@@ -1,0 +1,14 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
