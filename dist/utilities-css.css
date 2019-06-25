@@ -155,108 +155,6 @@
   z-index: auto !important;
 }
 
-.text-primary {
-  color: #007bff !important;
-}
-
-a.text-primary:hover {
-  color: #0062cc !important;
-}
-
-.text-secondary {
-  color: #6c757d !important;
-}
-
-a.text-secondary:hover {
-  color: #545b62 !important;
-}
-
-.text-light {
-  color: #f8f9fa !important;
-}
-
-a.text-light:hover {
-  color: #dae0e5 !important;
-}
-
-.text-dark {
-  color: #343a40 !important;
-}
-
-a.text-dark:hover {
-  color: #1d2124 !important;
-}
-
-.text-muted {
-  color: #6c757d !important;
-}
-
-a.text-muted:hover {
-  color: #545b62 !important;
-}
-
-.text-white {
-  color: #fff !important;
-}
-
-a.text-white:hover {
-  color: #e6e6e6 !important;
-}
-
-.bg-primary {
-  background-color: #007bff !important;
-}
-
-a.bg-primary:hover,
-button.bg-primary:hover {
-  background-color: #0062cc !important;
-}
-
-.bg-secondary {
-  background-color: #6c757d !important;
-}
-
-a.bg-secondary:hover,
-button.bg-secondary:hover {
-  background-color: #545b62 !important;
-}
-
-.bg-light {
-  background-color: #f8f9fa !important;
-}
-
-a.bg-light:hover,
-button.bg-light:hover {
-  background-color: #dae0e5 !important;
-}
-
-.bg-dark {
-  background-color: #343a40 !important;
-}
-
-a.bg-dark:hover,
-button.bg-dark:hover {
-  background-color: #1d2124 !important;
-}
-
-.bg-white {
-  background-color: #fff !important;
-}
-
-a.bg-white:hover,
-button.bg-white:hover {
-  background-color: #e6e6e6 !important;
-}
-
-.bg-transparent {
-  background-color: transparent !important;
-}
-
-a.bg-transparent:hover,
-button.bg-transparent:hover {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-
 .m-0 {
   margin: 0 !important;
 }
@@ -847,30 +745,6 @@ button.bg-transparent:hover {
 
 .border-left-5 {
   border-left-width: 5px !important;
-}
-
-.border-primary {
-  border-color: #007bff !important;
-}
-
-.border-secondary {
-  border-color: #6c757d !important;
-}
-
-.border-light {
-  border-color: #f8f9fa !important;
-}
-
-.border-dark {
-  border-color: #343a40 !important;
-}
-
-.border-muted {
-  border-color: #6c757d !important;
-}
-
-.border-white {
-  border-color: #fff !important;
 }
 
 .rounded-sm {

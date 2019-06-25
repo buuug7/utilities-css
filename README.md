@@ -45,16 +45,6 @@ The naming as blow
 
 The naming is `z-{value}`, {value} for 0|10|20|30|40|50|auto
 
-#### Colors
-
-text colors:
-
-`.text-{value}`, {value} for `primary, secondary, light, dark, muted, white`. if applied with `<a>` or `<button>` element, which have a hover state for darken 10%.
-
-background colors:
-
-`.bg-{value}`, {value} for `primary, secondary, light, dark, white , transparent`. also when background color applied with `<a>` or `<button>` elements, which have a hover state for darken 10%;
-
 #### Spacing
 
 The classes are named using the format `{property}{sides}-{size}`
@@ -121,9 +111,6 @@ Border width:
 
 - `.border-{0|1|2|3|4|5}`
 - `.border-{top|right|bottom|left}-{0|1|2|3|4|5}`
-
-Border color:  
-`border-{color}`, the color is one of `primary, secondary, light, dark, muted, white`.
 
 Border radius:
 
