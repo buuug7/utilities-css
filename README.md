@@ -2,6 +2,18 @@
 
 Simple and easy to use utilities CSS, inspired by [tailwindcss](https://github.com/tailwindcss/tailwindcss), but the tailwindcss is more complex and verbose to use. This only focused on wrap the most common use css into class name. The most utilities steal from [Bootstrap](https://github.com/twbs/bootstrap) utilities.
 
+ <p>
+    <a href="https://www.npmjs.com/package/utilities-css?minimal=true">
+        <img src="https://img.shields.io/npm/v/utilities-css.svg">
+  	</a>
+  	<a href="https://npmcharts.com/compare/utilities-css?minimal=true">
+  	    <img src="https://img.shields.io/npm/dm/utilities-css.svg"> 
+  	</a>
+  	<a href="">
+  	   <img src="https://img.shields.io/bundlephobia/min/utilities-css.svg" />
+  	</a>
+  </p>
+
 ## Usage
 
 ```
