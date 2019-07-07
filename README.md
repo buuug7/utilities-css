@@ -12,7 +12,7 @@ Simple and easy to use utilities CSS, inspired by [tailwindcss](https://github.c
   	<a href="#">
   	   <img src="https://img.shields.io/bundlephobia/min/utilities-css.svg" />
   	</a>
-  </p>
+ </p>
 
 ## Usage
 
