@@ -9,7 +9,7 @@ Simple and easy to use utilities CSS, inspired by [tailwindcss](https://github.c
   	<a href="https://npmcharts.com/compare/utilities-css?minimal=true">
   	    <img src="https://img.shields.io/npm/dm/utilities-css.svg"> 
   	</a>
-  	<a href="">
+  	<a href="#">
   	   <img src="https://img.shields.io/bundlephobia/min/utilities-css.svg" />
   	</a>
   </p>
