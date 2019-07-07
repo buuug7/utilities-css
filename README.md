@@ -2,8 +2,6 @@
 
 Simple and easy to use utilities CSS, inspired by [tailwindcss](https://github.com/tailwindcss/tailwindcss), but the tailwindcss is more complex and verbose to use. This only focused on wrap the most common use css into class name. The most utilities steal from [Bootstrap](https://github.com/twbs/bootstrap) utilities.
 
-Not support Responsive.
-
 ## Usage
 
 ```
