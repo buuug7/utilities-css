@@ -8,5 +8,7 @@
 out
 gen
 
-/node_modules
-/index.html
+.vscode
+
+node_modules
+index.html
