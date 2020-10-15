@@ -34,7 +34,7 @@ The naming is `disply-{value}`, {value} is one of `none, inline, inline-block, b
 
 #### Float
 
-Be ware the float utilities have no affect on flex items. `float-{value}`, {value} is one of `left, right, none`
+Beware the float utilities have no affect on flex items. `float-{value}`, {value} is one of `left, right, none`
 
 #### Position
 

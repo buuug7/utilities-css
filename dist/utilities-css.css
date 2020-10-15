@@ -35,6 +35,10 @@
   display: flex !important;
 }
 
+.display-inline-flex {
+  display: inline-flex !important;
+}
+
 .display-grid {
   display: grid !important;
 }

@@ -4,7 +4,7 @@
 //
 
 $displays: none, inline, inline-block, block, table, table-row, table-cell, flex,
-  grid;
+  inline-flex, grid;
 
 @each $display in $displays {
   .display-#{$display} {
