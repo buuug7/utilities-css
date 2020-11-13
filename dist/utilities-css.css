@@ -887,6 +887,11 @@
   max-height: 100% !important;
 }
 
+.wh-100 {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 .flex-row {
   flex-direction: row !important;
 }

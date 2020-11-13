@@ -135,10 +135,11 @@ Border radius:
 
 - `w-{25|50|75|100|auto}` for width 25%, 50%, 75%, 100% and auto
 - `h-{25|50|75|100|auto}` for height 25%, 50%, 75%, 100% and auto
-- `mw-100` set the max-width with 100%
-- `mh-100` set the max-height with 100%
-- `w-100` set the width with 100%
-- `h-100` set the height with 100%
+- `mw-100` set the max-width 100%
+- `mh-100` set the max-height 100%
+- `w-100` set width 100%
+- `h-100` set height 100%
+- `wh-100` set both the with and height 100%
 
 #### Flex
 

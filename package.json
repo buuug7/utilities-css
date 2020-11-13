@@ -8,9 +8,7 @@
   "scripts": {
     "pretty-quick": "pretty-quick",
     "start": "node-sass -w src -o ./dist",
-    "build": "node-sass ./src/utilities-css.scss -o ./dist",
-    "version": "npm run build && git add .",
-    "postversion": "git push && git push --tags"
+    "build": "node-sass ./src/utilities-css.scss -o ./dist"
   },
   "husky": {
     "hooks": {
