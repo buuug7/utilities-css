@@ -16,7 +16,7 @@
     }
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
+    "node-sass": "^5.0.0",
     "prettier": "^2.0.5",
     "husky": "^4.2.3",
     "pretty-quick": "^3.1.0"
