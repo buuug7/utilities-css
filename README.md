@@ -30,15 +30,15 @@ Or from CDN
 
 #### Display
 
-The naming is `disply-{value}`, {value} is one of `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex, grid`.
+The naming is `disply-{value}`, `{value}` is one of `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex, grid`.
 
 #### Float
 
-Beware the float utilities have no affect on flex items. `float-{value}`, {value} is one of `left, right, none`
+Beware the float utilities have no effect on flex items. `float-{value}`, `{value}` is one of `left, right, none`
 
 #### Position
 
-The naming is `position-{value}`, {value} is one of `static, relative, absolute, fixed, sticky`.
+The naming is `position-{value}`, `{value}` is one of `static, relative, absolute, fixed, sticky`.
 
 #### Visibility
 
@@ -57,32 +57,32 @@ The naming is `z-{value}`, {value} for 0|10|20|30|40|50|auto
 
 #### Spacing
 
-The classes are named using the format `{property}{sides}-{size}`
+The classes are naming using the format `{property}{sides}-{size}`
 
-The {property} is one of:
+The `{property}` is one of:
 
-- m - for classes that set margin
-- p - for classes that set padding
+- **m** for classes that set margin
+- **p** for classes that set padding
 
 Where {sides} is one of:
 
-- t - for classes that set margin-top or padding-top
-- b - for classes that set margin-bottom or padding-bottom
-- l - for classes that set margin-left or padding-left
-- r - for classes that set margin-right or padding-right
-- x - for classes that set both _-left and _-right
-- y - for classes that set both _-top and _-bottom
-- blank - for classes that set a margin or padding on all 4 sides of the element
+- **t** for classes that set margin-top or padding-top
+- **b** for classes that set margin-bottom or padding-bottom
+- **l** for classes that set margin-left or padding-left
+- **r** for classes that set margin-right or padding-right
+- **x** for classes that set both _-left and _-right
+- **y** for classes that set both _-top and _-bottom
+- **blank** for classes that set a margin or padding on all 4 sides of the element
 
 Where {size} is one of:
 
-- 0 - for classes that eliminate the margin or padding by setting it to 0
-- 1 - for classes that set the margin or padding to \$spacer \* .25
-- 2 - for classes that set the margin or padding to \$spacer \* .5
-- 3 - for classes that set the margin or padding to \$spacer
-- 4 - for classes that set the margin or padding to \$spacer \* 1.5
-- 5 - for classes that set the margin or padding to \$spacer \* 3
-- auto - for classes that set the margin to auto
+- **0** for classes that eliminate the margin or padding by setting it to 0
+- **1** for classes that set the margin or padding to `$spacer * .25`
+- **2** for classes that set the margin or padding to `$spacer * .5`
+- **3** for classes that set the margin or padding to `$spacer`
+- **4** for classes that set the margin or padding to `$spacer * 1.5`
+- **5** for classes that set the margin or padding to `$spacer * 3`
+- **auto** for classes that set the margin to auto
 
 > the `$spacer` default 1rem
 
@@ -143,7 +143,7 @@ Border radius:
 
 #### Flex
 
-Support most features of flex layout and let user quickly manage layout, alignment and more of control. steal from Bootstrap flex utilities.
+Support most features of flex layout and let user quickly manage the layout, alignment and more of control. steal from Bootstrap flex utilities.
 
 - flex direction
   - flex-row
