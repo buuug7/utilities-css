@@ -30,7 +30,7 @@ Or from CDN
 
 #### Display
 
-The naming is `disply-{value}`, `{value}` is one of `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex, grid`.
+The naming is `display-{value}`, `{value}` is one of `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex, grid`.
 
 #### Float
 
