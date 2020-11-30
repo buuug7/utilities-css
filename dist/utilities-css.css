@@ -782,6 +782,11 @@
 .align-self-stretch {
   align-self: stretch !important;
 }
+.flex-with-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .clearfix:after {
   content: "";
   display: table;

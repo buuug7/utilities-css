@@ -34,7 +34,6 @@
   flex-wrap: wrap-reverse !important;
 }
 
-
 //
 // flex grow and shrink
 //
@@ -135,7 +134,6 @@
   align-content: stretch !important;
 }
 
-
 //
 // align-self
 //
@@ -162,4 +160,15 @@
 
 .align-self-stretch {
   align-self: stretch !important;
+}
+
+//
+// Other
+//
+
+// display flex and set both horizontal and vertical center
+.flex-with-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

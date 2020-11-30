@@ -180,13 +180,14 @@ Support most features of flex layout and let user quickly manage the layout, ali
   - align-content-around
   - align-content-stretch
 - align self
-
   - align-self-auto
   - align-self-start
   - align-self-end
   - align-self-center
   - align-self-baseline
   - align-self-stretch
+- other
+  - flex-with-center (display flex and set both horizontal and vertical center)
 
 #### Other
 
