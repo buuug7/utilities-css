@@ -1,16 +1,16 @@
 # Utility CSS
 
-Simple and easy to use utilities CSS, inspired by [tailwindcss](https://github.com/tailwindcss/tailwindcss), but the tailwindcss is more complex and verbose to use. This only focused on wrap the most common use css into class name. The most utilities steal from [Bootstrap](https://github.com/twbs/bootstrap) utilities.
+Simple and easy to use utilities CSS, inspired by [tailwindcss](https://github.com/tailwindcss/tailwindcss), but the tailwindcss is more complex and verbose to use. This only focused on wrap the most common used css into class name. Most of them is steal from [Bootstrap](https://github.com/twbs/bootstrap) utilities.
 
  <p>
     <a href="https://www.npmjs.com/package/utilities-css?minimal=true">
-        <img src="https://img.shields.io/npm/v/utilities-css.svg">
+        <img src="https://img.shields.io/npm/v/utilities-css.svg" alt="npm version">
   	</a>
   	<a href="https://npmcharts.com/compare/utilities-css?minimal=true">
-  	    <img src="https://img.shields.io/npm/dm/utilities-css.svg"> 
+  	    <img src="https://img.shields.io/npm/dm/utilities-css.svg" alt="npm downloads"> 
   	</a>
   	<a href="#">
-  	   <img src="https://img.shields.io/bundlephobia/min/utilities-css.svg" />
+  	   <img src="https://img.shields.io/bundlephobia/min/utilities-css.svg" alt="minified size"/>
   	</a>
  </p>
 
@@ -32,17 +32,33 @@ Or from CDN
 
 The naming is `display-{value}`, `{value}` is one of `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex, grid`.
 
+```html
+<div class="display-block">some text</div>
+```
+
 #### Float
 
-Beware the float utilities have no effect on flex items. `float-{value}`, `{value}` is one of `left, right, none`
+Beware the float utilities have no effect on flex items. `float-{value}`, `{value}` is one of `left, right, none`.
+
+```html
+<div class="float-left">some text</div>
+```
 
 #### Position
 
 The naming is `position-{value}`, `{value}` is one of `static, relative, absolute, fixed, sticky`.
 
+```html
+<div class="position-relative">some text</div>
+```
+
 #### Visibility
 
-The naming is `visible` or `invisible`
+The naming is `visible` or `invisible`.
+
+```html
+<div class="invisible">some text</div>
+```
 
 #### Overflow
 
@@ -51,9 +67,18 @@ The naming as blow
 - `overflow-{value}`, {value} is one of `visible, hidden, scroll, auto`
 - `overflow-{x|y}-{value}`, {value} is one of `visible, hidden, scroll, auto`
 
+```html
+<div class="overflow-hidden">some text</div>
+<div class="overflow-x-hidden">some text</div>
+```
+
 #### z-index
 
 The naming is `z-{value}`, {value} for 0|10|20|30|40|50|auto
+
+```html
+<div class="z-10">some text</div>
+```
 
 #### Spacing
 
@@ -86,10 +111,18 @@ Where {size} is one of:
 
 > the `$spacer` default 1rem
 
-Example:  
-`mt-0` set the element margin-top with 0 value  
-`px-0` set the element padding left and right with 0 value  
-`mx-auto` set the element margin left and right with auto value
+Example:
+
+```html
+<!-- mt-0 set the element margin-top with 0 value -->
+<div class="mt-0">some text</div>
+
+<!-- px-0 set the element padding left and right with 0 value -->
+<div class="px-0">some text</div>
+
+<!-- mx-auto set the element margin left and right with auto value -->
+<div class="mx-auto">some text</div>
+```
 
 #### Shadow
 
@@ -187,7 +220,7 @@ Support most features of flex layout and let user quickly manage the layout, ali
   - align-self-baseline
   - align-self-stretch
 - other
-  - flex-with-center (display flex and set both horizontal and vertical center)
+  - flex-center (display flex and set both horizontal and vertical center)
 
 #### Other
 
