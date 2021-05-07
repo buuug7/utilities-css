@@ -133,6 +133,11 @@ The shadow utility copied from bootstrap.
 - `shadow`
 - `shadow-lg`
 
+```html
+<div class="shadow-sm">some text</div>
+```
+
+
 #### Border
 
 The border default width is `1px solid #6c757d`
@@ -164,6 +169,11 @@ Border radius:
 - `rounded-circle` circle
 - `rounded-0` no radius
 
+
+```html
+<div class="border-top border-dashed rounded-top">some text</div>
+```
+
 #### Sizing
 
 - `w-{25|50|75|100|auto}` for width 25%, 50%, 75%, 100% and auto
@@ -173,6 +183,10 @@ Border radius:
 - `w-100` set width 100%
 - `h-100` set height 100%
 - `wh-100` set both the with and height 100%
+
+```html
+<div class="w-100">some text</div>
+```
 
 #### Flex
 
@@ -222,6 +236,10 @@ Support most features of flex layout and let user quickly manage the layout, ali
 - other
   - flex-center (display flex and set both horizontal and vertical center)
 
+```html
+<div class="display-flex justify-content-center align-content-center">some text</div>
+```
+
 #### Other
 
 Other utilities
@@ -229,13 +247,6 @@ Other utilities
 - clearfix
 - text-center
 - list-unstyled
-
-## publish
-
-- run `git add .`
-- run `git commit -m "..."`
-- run `npm version major|minor|patch -m "some message %s"`
-- run `npm publish`
 
 ## Contributing
 

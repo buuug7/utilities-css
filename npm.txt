@@ -1,0 +1,6 @@
+## npm publish steps
+
+- run `git add .`
+- run `git commit -m "..."`
+- run `npm version major|minor|patch -m "some message %s"`
+- run `npm publish`
