@@ -1,6 +1,8 @@
 # Utility CSS
 
-Simple and easy to use utilities CSS, inspired by [tailwindcss](https://github.com/tailwindcss/tailwindcss), but the tailwindcss is more complex and verbose to use. This only focused on wrap the most common used css into class name. Most of them is steal from [Bootstrap](https://github.com/twbs/bootstrap) utilities.
+Simple and easy to use utilities CSS, inspired by [tailwindcss](https://github.com/tailwindcss/tailwindcss), but the
+tailwindcss is more complex and verbose to use. This only focused on wrap the most common used css into class name. Most
+of them is steal from [Bootstrap](https://github.com/twbs/bootstrap) utilities.
 
  <p>
     <a href="https://www.npmjs.com/package/utilities-css?minimal=true">
@@ -30,7 +32,8 @@ Or from CDN
 
 #### Display
 
-The naming is `display-{value}`, `{value}` is one of `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex, grid`.
+The naming is `display-{value}`, `{value}` is one
+of `none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex, grid`.
 
 ```html
 <div class="display-block">some text</div>
@@ -137,7 +140,6 @@ The shadow utility copied from bootstrap.
 <div class="shadow-sm">some text</div>
 ```
 
-
 #### Border
 
 The border default width is `1px solid #6c757d`
@@ -169,7 +171,6 @@ Border radius:
 - `rounded-circle` circle
 - `rounded-0` no radius
 
-
 ```html
 <div class="border-top border-dashed rounded-top">some text</div>
 ```
@@ -190,64 +191,129 @@ Border radius:
 
 #### Flex
 
-Support most features of flex layout and let user quickly manage the layout, alignment and more of control. steal from Bootstrap flex utilities.
+Support most features of flex layout and let user quickly manage the layout, alignment and more of control. steal from
+Bootstrap flex utilities.
 
 - flex direction
-  - flex-row
-  - flex-row-reverse
-  - flex-column
-  - flex-column-reverse
+  - `flex-row`
+  - `flex-row-reverse`
+  - `flex-column`
+  - `flex-column-reverse`
 - flex wrap
-  - flex-wrap
-  - flex-nowrap
-  - flex-wrap-reverse
+  - `flex-wrap`
+  - `flex-nowrap`
+  - `flex-wrap-reverse`
 - flex grow and shrink
-  - flex-fill
-  - flex-grow-0
-  - flex-grow-1
-  - flex-shrink-0
-  - flex-shrink-1
+  - `flex-fill`
+  - `flex-grow-0`
+  - `flex-grow-1`
+  - `flex-shrink-0`
+  - `flex-shrink-1`
 - justify content
-  - justify-content-start
-  - justify-content-end
-  - justify-content-center
-  - justify-content-between
-  - justify-content-around
+  - `justify-content-start`
+  - `justify-content-end`
+  - `justify-content-center`
+  - `justify-content-between`
+  - `justify-content-around`
 - align items
-  - align-items-start
-  - align-items-end
-  - align-items-center
-  - align-items-baseline
-  - align-items-stretch
+  - `align-items-start`
+  - `align-items-end`
+  - `align-items-center`
+  - `align-items-baseline`
+  - `align-items-stretch`
 - align content
-  - align-content-start
-  - align-content-end
-  - align-content-center
-  - align-content-between
-  - align-content-around
-  - align-content-stretch
+  - `align-content-start`
+  - `align-content-end`
+  - `align-content-center`
+  - `align-content-between`
+  - `align-content-around`
+  - `align-content-stretch`
 - align self
-  - align-self-auto
-  - align-self-start
-  - align-self-end
-  - align-self-center
-  - align-self-baseline
-  - align-self-stretch
+  - `align-self-auto`
+  - `align-self-start`
+  - `align-self-end`
+  - `align-self-center`
+  - `align-self-baseline`
+  - `align-self-stretch`
 - other
   - flex-center (display flex and set both horizontal and vertical center)
 
 ```html
-<div class="display-flex justify-content-center align-content-center">some text</div>
+<div class="display-flex justify-content-center align-content-center">
+  some text
+</div>
 ```
 
-#### Other
+#### font
 
-Other utilities
+font weight
 
-- clearfix
-- text-center
-- list-unstyled
+- `fw-light` font weight with 300
+- `fw-normal` font weight with 400
+- `fw-bold` font weight with 700
+
+font style
+
+- `fst-italic` font-style with italic
+- `fst-normal` font-style with normal
+
+font size
+
+- `fs-1` font-size with 2.5rem , it related to h1
+- `fs-2` font-size with 2rem , it related to h2
+- `fs-3` font-size with 1.75rem , it related to h3
+- `fs-4` font-size with 1.5rem , it related to h4
+- `fs-5` font-size with 1.25rem , it related to h5
+- `fs-6` font-size with 1rem , it related to h6
+
+#### text
+
+text align
+
+- `text-align-start` text-align with left
+- `text-align-end` text-align with right
+- `text-align-center` text-align with center
+
+white space
+
+- `text-wrap` white space with normal
+- `text-nowrap` white space with nowrap
+
+word break
+
+- `text-break` with break-word
+
+text transform
+
+- `text-lowercase` text-transform with lowercase
+- `text-uppercase` text-transform with uppercase
+- `text-capitalize` text-transform with capitalize
+
+text decoration
+
+- `text-decoration-none` text-decoration with none
+- `text-decoration-underline` text-decoration with underline
+- `text-decoration-line-through` text-decoration with line-through
+
+line height
+
+- `lh-1` line-height with 1
+- `lh-sm` line-height with 1.25
+- `lh-base` line-height with 1.5
+- `lh-lg` line-height with 2
+
+text reset
+
+- `text-reset` reset text color with parent
+
+#### Other utilities
+
+- `clearfix`
+- `text-center`
+- `list-unstyled`
 
 ## Contributing
 
-If you're interested in contributing to Utilities CSS, please read our [CONTRIBUTING.md](https://github.com/buuug7/utilities-css/blob/master/CONTRIBUTING.md) before submitting a pull request.
+If you're interested in contributing to Utilities CSS, please read
+our [CONTRIBUTING.md](https://github.com/buuug7/utilities-css/blob/master/CONTRIBUTING.md) before submitting a pull
+request.
