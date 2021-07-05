@@ -1,0 +1,51 @@
+// text align
+@each $k, $v in (start: left, end: right, center: center) {
+  .text-align-#{$k} {
+    text-align: $v !important;
+  }
+}
+
+// white-space wrap, nowrap
+@each $k, $v in (wrap: normal, nowrap: nowrap) {
+  .text-#{$k} {
+    white-space: $v !important;
+  }
+}
+
+// text break
+.text-break {
+  word-break: break-word !important;
+  word-wrap: break-word !important;
+}
+
+// text transform
+@each $transform in (lowercase, uppercase, capitalize) {
+  .text-#{$transform} {
+    text-transform: $transform !important;
+  }
+}
+
+// text decoration
+@each $k in (none, underline, line-through) {
+  .text-decoration-#{$k} {
+    text-decoration: $k !important;
+  }
+}
+
+// line height
+$line-height-base: 1.5;
+$line-height-sm: 1.25;
+$line-height-lg: 2;
+
+@each $k,
+  $v
+    in (1: 1, sm: $line-height-sm, base: $line-height-base, lg: $line-height-lg)
+{
+  .lh-#{$k} {
+    line-height: $v !important;
+  }
+}
+
+.text-reset {
+  color: inherit !important;
+}
