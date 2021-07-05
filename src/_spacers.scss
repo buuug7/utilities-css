@@ -7,53 +7,103 @@
 // spacers from bootstrap
 //
 $spacer: 1rem !default;
-$spacers: (
-  0: 0,
-  1: (
-    $spacer * 0.25
-  ),
-  2: (
-    $spacer * 0.5
-  ),
-  3: $spacer,
-  4: (
-    $spacer * 1.5
-  ),
-  5: (
-    $spacer * 3
-  ),
-  auto: auto
-) !default;
+$space_0: 0;
+$space_1: $spacer * 0.25;
+$space_2: $spacer * 0.5;
+$space_3: $spacer * 1;
+$space_4: $spacer * 1.5;
+$space_5: $spacer * 3;
+$space_auto: auto;
 
-@each $prop, $abbr in (margin: m, padding: p) {
-  @each $size, $length in $spacers {
-    @each $direct,
-      $direct-abbr
-        in ("": "", top: t, right: r, bottom: b, left: l, x: "", y: "")
-    {
-      @if $direct == "" {
-        $direct: "";
-      } @else {
-        $direct: -#{$direct};
+$spacers: (
+  0: $space_0,
+  1: $space_1,
+  2: $space_2,
+  3: $space_3,
+  4: $space_4,
+  5: $space_5,
+);
+
+// margin, padding all direction
+@each $k, $v in (m: margin, p: pading) {
+  $pre_value: "margin";
+
+  @if $k == "p" {
+    $pre_value: "padding";
+  }
+
+  @each $size_key, $size_value in $spacers {
+    .#{$k}-#{$size_key} {
+      #{$pre_value}: $size_value !important;
+    }
+  }
+}
+
+// margin top, right, bottom, left
+
+@each $k, $v in (m: margin, p: pading) {
+  $pre_value: "margin";
+
+  @if $k == "p" {
+    $pre_value: "padding";
+  }
+
+  @each $size_key, $size_value in $spacers {
+    @each $direct_abbr, $direct_name in (t: top, r: right, b: bottom, l: left) {
+      .#{$k}#{$direct_abbr}-#{$size_key} {
+        #{$pre_value}-#{$direct_name}: $size_value !important;
+      }
+    }
+  }
+}
+
+// margin x, y
+@each $k, $v in (m: margin, p: pading) {
+  $pre_value: "margin";
+
+  @if $k == "p" {
+    $pre_value: "padding";
+  }
+
+  @each $size_key, $size_value in $spacers {
+    @each $direct_abbr in (x, y) {
+      @if $direct_abbr == "x" {
+        .#{$k}#{$direct_abbr}-#{$size_key} {
+          #{$pre_value}-left: $size_value !important;
+          #{$pre_value}-right: $size_value !important;
+        }
       }
 
-      @if $direct == "-x" {
-        $direct: str_slice($direct, 2);
-        .#{$abbr}#{$direct}-#{$size} {
-          #{$prop}-left: $length !important;
-          #{$prop}-right: $length !important;
-        }
-      } @else if $direct == "-y" {
-        $direct: str_slice($direct, 2);
-        .#{$abbr}#{$direct}-#{$size} {
-          #{$prop}-top: $length !important;
-          #{$prop}-bottom: $length !important;
-        }
-      } @else {
-        .#{$abbr}#{$direct-abbr}-#{$size} {
-          #{$prop}#{$direct}: $length !important;
+      @if $direct_abbr == "y" {
+        .#{$k}#{$direct_abbr}-#{$size_key} {
+          #{$pre_value}-top: $size_value !important;
+          #{$pre_value}-bottom: $size_value !important;
         }
       }
     }
   }
+}
+
+// margin auto
+@each $direct_abbr,
+$direct_name in (t: top, r: right, b: bottom, l: left, x: "", y: "") {
+  @if $direct_abbr == "x" {
+    .m#{$direct_abbr}-auto {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  } @else if $direct_abbr == "y" {
+    .m#{$direct_abbr}-auto {
+      margin-top: auto !important;
+      margin-bottom: auto !important;
+    }
+  } @else {
+    .m#{$direct_abbr}-auto {
+      margin-#{$direct_name}: auto !important;
+    }
+  }
+}
+
+.m-auto {
+  margin: auto;
 }
