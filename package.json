@@ -10,8 +10,8 @@
     "build": "sass src:dist"
   },
   "devDependencies": {
-    "prettier": "^2.2.1",
-    "sass": "^1.32.12"
+    "prettier": "^2.6.0",
+    "sass": "^1.49.9"
   },
   "keywords": [
     "css",
